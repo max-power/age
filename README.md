@@ -28,7 +28,7 @@ birthday = Time.new(1990, 3, 14)
 Age.new(birthday).now
 ```
 
-### `Age#at(Timestamp)`
+### `Age#at(timestamp)`
 
 ```ruby
 User  = Struct.new(:dob)
