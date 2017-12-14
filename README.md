@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-### `Age#new(timestamp)` 
+### `Age::now(timestamp)`
+shortcut for `Age.new(timestamp).now` 
+
+### `Age::new(timestamp)` 
 `Age#new` accepts a Time, Date or DateTime object as argument.
 
 ### `Age#now`
