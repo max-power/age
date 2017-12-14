@@ -1,4 +1,8 @@
 class Age
+  def self.now(dob)
+    new(dob).now
+  end
+  
   def initialize(dob)
     @dob = dob
   end
