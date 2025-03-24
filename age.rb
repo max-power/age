@@ -17,3 +17,5 @@ class Age
     date.strftime('%Y%m%d').to_i
   end
 end
+
+require_relative "has_age" if defined? ActiveSupport
