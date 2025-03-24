@@ -6,6 +6,6 @@ Gem::Specification.new do |s|
   s.summary     = 'Age Calculator'
   s.description = 'A handy little age calculation class.'
   
-  s.files         = ['age.rb', 'has_age.rb' 'README.md']
+  s.files         = ['age.rb', 'has_age.rb', 'README.md']
   s.require_path  = '.'
 end
