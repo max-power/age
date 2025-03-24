@@ -41,3 +41,20 @@ user  = User.new(Time.new(1970, 6, 21))
 
 Age.new(user.dob).at event.start_date
 ```
+
+### ActiveRecord/ActiveModel
+
+```ruby
+class User < ApplicationRecord
+  has_person_name
+  has_age
+end
+
+class Dog < ApplicationRecord
+  has_age column: :pet_birth_date
+end
+
+user = User.new(dob: Date.new(2000, 1, 1))
+user.age
+user.age(at: Time.now + 1.day)
+```
