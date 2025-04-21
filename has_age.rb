@@ -1,5 +1,5 @@
 module HasAge
-  def has_age(column: :dob)
+  def has_age(column = :dob)
     define_method(:age) do |at: Time.current|
       Age.new(public_send(column)).at(at)
     end

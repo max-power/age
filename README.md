@@ -51,7 +51,7 @@ class User < ApplicationRecord
 end
 
 class Dog < ApplicationRecord
-  has_age column: :pet_birth_date
+  has_age :pet_birth_date
 end
 
 user = User.new(dob: Date.new(2000, 1, 1))
